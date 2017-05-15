@@ -1,0 +1,37 @@
+{
+  "nested": {
+    "test": {
+      "nested": {
+        "Input": {
+          "fields": {
+            "id": {
+              "type": "int32",
+              "id": 1
+            },
+            "error": {
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "Output": {
+          "fields": {
+            "id": {
+              "type": "int32",
+              "id": 1
+            }
+          }
+        },
+        "TestService": {
+          "methods": {
+            "RequestStream": {
+              "requestType": "Input",
+              "requestStream": true,
+              "responseType": "Output"
+            }
+          }
+        }
+      }
+    }
+  }
+}

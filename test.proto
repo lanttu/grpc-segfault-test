@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package test;
+
+
+message Input {
+  int32 id = 1;
+  string error = 2;
+};
+
+message Output {
+  int32 id = 1;
+};
+
+service TestService {
+  rpc RequestStream(stream Input) returns (Output) {}
+};
